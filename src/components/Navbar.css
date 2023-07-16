@@ -1,0 +1,22 @@
+nav {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #cb8c54;
+  color: #fff;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:not(:last-child) {
+  margin-right: 20px;
+}
+nav a:hover {
+  color: blue;
+}
+
+nav svg {
+  margin-right: 5px;
+}
