@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { auth, provider } from "../firebase";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faFilePen, faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 
@@ -26,6 +27,7 @@ const Navbar = ({ isAuth }) => {
           ログアウト
         </Link>
       )}
+      {isAuth ? <img src={auth.currentUser.photoURL} alt="" /> : ""}
     </nav>
   );
 };
