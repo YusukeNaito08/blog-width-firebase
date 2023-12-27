@@ -14,7 +14,7 @@ const CreatePost = () => {
           <div>投稿</div>
           <textarea placeholder="投稿内容を記入" />
         </div>
-        <button>投稿する</button>
+        <button >投稿する</button>
       </div>
     </div>
   );
