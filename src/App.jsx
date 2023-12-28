@@ -8,6 +8,7 @@ import Logout from "./components/Logout";
 import Navbar from "./components/Navbar";
 import IndexPost from "./components/indexPost";
 import DetailPost from "./components/detailPost";
+import Signup from "./components/signup";
 
 function App() {
   const [isAuth, setIsAuth] = useState(false);
@@ -22,6 +23,7 @@ function App() {
         <Route path="/createpost" element={<CreatePost />}></Route>
         <Route path="/login" element={<Login setIsAuth={setIsAuth} />}></Route>
         <Route path="/logout" element={<Logout setIsAuth={setIsAuth} />}></Route>
+        <Route path="/signup" element={<Signup setIsAuth={setIsAuth} />}></Route>
       </Routes>
     </Router>
   );

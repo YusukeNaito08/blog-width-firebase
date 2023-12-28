@@ -31,7 +31,7 @@ const Navbar = ({ isAuth }) => {
           ログアウト
         </Link>
       )}
-      {isAuth ? <img src={auth.currentUser.photoURL} alt="" /> : ""}
+      {isAuth ? <span>{auth.currentUser ? auth.currentUser.email : ""}</span> : ""}
     </nav>
   );
 };
